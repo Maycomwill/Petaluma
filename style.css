@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Inter:wght@400;500;600;700&family=Lobster+Two:wght@400;700&family=Tangerine:wght@400;700&display=swap');
+
+
+:root {
+  font-size: 62.5%;
+
+  --gray_text: #09090f;
+  --primary: #fa97d4;
+  --primary_lighter: #ffd2f4;
+  --primary_medium: #ff63d8;
+  --primary_darker: #330823;
+  --secondary: #76fdd0;
+  --secondary_lighter: #c6ffec;
+  --secondary_medium: #2cb98a;
+  --secondary_darker: #01573a;
+}
+
+::-webkit-scrollbar{
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary_lighter);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary_medium);
+}
+
+html {
+  font-family: 'Inter', 'sans-serif';
+}
+
+body>* {
+  font-size: 1.6rem;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-width: 98vw;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #fff0fd, #ffeffb, #ffedfa, #ffecf8, #ffebf6, #feeaf6, #feeaf6, #fde9f6, #fbe9f8, #f9e9fa, #f7e9fd, #f4e9ff);
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 6rem;
+  background-color: var(--primary_lighter);
+  text-transform: uppercase;
+}
+
+header nav {
+  margin-left: 3.6rem;
+  margin-right: 3.6rem;
+  display: flex;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.logo h1 {
+  font-family: 'Tangerine';
+  color: var(--secondary_medium);
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 6.4rem;
+}
+
+header nav ul {
+  flex: 1;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu li {}
+
+.menu li a {
+  text-decoration: none;
+  color: var(--gray_text);
+  border-bottom: .2rem solid rgba(0,0,0,0);
+  border-radius: .2rem;
+  transition: border .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menu li a:hover{
+  border-bottom: .2rem solid var(--secondary_medium);
+  border-radius: .2rem;
+}
+
+.menu li #active{
+  border-bottom: .2rem solid var(--secondary_medium);
+  border-radius: .2rem;
+}
+
+.menu li a:visited{
+  color: currentColor
+}
+
+.main{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-x: hidden;
+}
+
+.carrossel{
+  background-color: #00ffbf1e;
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+  padding: 0rem 12rem;
+  text-align: justify;
+
+}
+
+.carrossel .article {
+  width: 50%;
+}
+
+.carrossel .article article{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.article article .marca h1 {
+  font-family: 'Tangerine';
+  color: var(--primary);
+  text-shadow: .1rem .1rem .25rem var(--primary_darker);
+  font-size: 9.6rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 6.4rem;
+}
+
+.marca span {
+  font-size: 1.4rem;
+}
+
+.carrossel .article .slogan{
+  width: 60%;
+}
+
+.carrossel .img #first {
+  width: 10%;
+  transform: rotate(20deg);
+  position: absolute;
+  top: 2rem;
+  bottom: 0rem;
+}
+.carrossel .img #second {
+  width: 8%;
+  transform: rotate(-26deg) scaleX(-1);
+  position: absolute;
+  top: 3rem;
+  bottom: 0rem;
+  right: 20rem;
+
+}
+
+.vitrine{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card{
+  max-width: 20rem;
+  height: 30rem;
+  background-color: #0000000e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  transition: background-color .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: .4rem;
+}
+
+.card:hover{
+  background-color: #0000001c;
+  cursor: pointer;
+}
+
+.card .img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.card .img img {
+  width: 80%;
+}
+
+.card .flower-name{
+  margin-bottom: .4rem;
+}
+
+footer{
+  padding: 1.6rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: 1rem;
+}
