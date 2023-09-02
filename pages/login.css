@@ -1,0 +1,95 @@
+:root{
+  --gray_text: #09090f;
+  --primary: #fa97d4;
+  --primary_lighter: #ffd2f4;
+  --primary_medium: #ff63d8;
+  --primary_darker: #330823;
+  --secondary: #76fdd0;
+  --secondary_lighter: #c6ffec;
+  --secondary_medium: #2cb98a;
+  --secondary_darker: #01573a;
+}
+
+.login-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex:1
+}
+
+.login-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border: .1rem solid var(--secondary);
+  border-radius: .4rem;
+  background-color: #00000002;
+  padding: 3.2rem 1.2rem;
+}
+
+.login-wrapper form div {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+#email, #password {
+  width: 40rem;
+  height: 2.4rem;
+  text-align: start;
+  padding: 0rem 0rem 0rem .4rem;
+  outline: none;
+  border: none;
+  border: .1rem solid rgba(0, 0, 0, 0);
+  border-radius: .4rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--secondary_medium);
+}
+
+#email:focus, #password:focus {
+  border: .1rem solid var(--primary)
+}
+
+.login-wrapper form .remember{
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.6rem;
+  margin-top: .8rem;
+  accent-color: var(--primary);
+}
+
+.forget{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+form .submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form div button {
+  outline: none;
+  border: .1rem solid rgba(0, 0, 0, 0);
+  background-color: var(--primary_medium);
+  color: white;
+  width: 50%;
+  margin: 1.6rem 0rem;
+  height: 3.2rem;
+  border-radius: .4rem;
+  transition: background-color .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+form div button:hover {
+  background-color: var(--primary);
+}
+
+form div button:focus {
+  border: .1rem solid var(--secondary)
+}
