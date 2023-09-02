@@ -1,0 +1,46 @@
+.product-cards{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  gap: 2rem;
+  margin: 0rem 2.4rem;
+}
+
+li .card{
+  display: flex;
+  /* background-color: rgba(255, 0, 0, 0.363); */
+  gap: 3.2rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#inverted{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+li .card img{
+  height: 25rem;
+  width: 25rem;
+}
+
+li .card .description{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: justify;
+}
+
+li .card .description span{
+  font-size: 3.6rem;
+  font-weight: 700;
+  font-family: 'Bai Jamjuree';
+}
+
+li .card .description p{
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-family: 'Inter';
+}
